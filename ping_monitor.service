@@ -1,0 +1,10 @@
+[Unit]
+Description=Ping Monitor Service
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/ping_monitor.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
