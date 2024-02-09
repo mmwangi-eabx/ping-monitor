@@ -16,7 +16,6 @@ sudo rm /etc/ping_monitor.conf
 
 # Remove the log file and its directory
 sudo rm /var/log/ping_monitor/ping_monitor.log
-sudo rmdir /var/log/ping_monitor
 
 # Reload the systemd daemon
 sudo systemctl daemon-reload
