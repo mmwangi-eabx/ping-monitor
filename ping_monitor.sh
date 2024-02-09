@@ -13,7 +13,7 @@ for i in "${!IP_ARRAY[@]}"; do
   INTERVAL=${INTERVAL_ARRAY[i]}
 
   # Run ping_ip.sh in the background with the given IP address and interval
-  sudo ./ping_ip.sh "$IP_ADDRESS" "$INTERVAL" "$LOG_FILE" &
+  sudo ./usr/local/bin/ping_ip.sh "$IP_ADDRESS" "$INTERVAL" "$LOG_FILE" &
 done
 
 # Wait for all background processes to finish
