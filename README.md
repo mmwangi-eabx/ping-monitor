@@ -8,20 +8,21 @@ The Ping Monitor is a user-friendly script that diligently monitors the reachabi
 
 - Linux
 
-### Download
-
-Grab the Ping Monitor script using these commands:
-
-```bash
-wget https://github.com/mmwangi-eabx/ping-monitor/archive/refs/tags/alpha.zip
-unzip alpha.zip && cd ping-monitor-alpha
-```
-
 ### Installation and Configuration
 
 **Preparation:**
 
 - Ensure you have `wget` and `unzip` installed.
+
+**Download package**
+
+Grab the Ping Monitor script using these commands:
+
+```bash
+cd /tmp
+wget https://github.com/mmwangi-eabx/ping-monitor/releases/download/v1.0.1-alpha/ping_monitor_v1.0.1-alpha.zip
+unzip ping_monitor_v1.0.1-alpha.zip -d /ping-monitor && cd ping-monitor
+```
 
 **Configuration:**
 
@@ -38,6 +39,7 @@ unzip alpha.zip && cd ping-monitor-alpha
    - **LOG_FILE:** Path to the log file (e.g., `/var/log/ping_monitor/ping_monitor.log`).
 
 2. **Example Values:**
+   The configuration below track ips 8.8.8.8, 10.10.10.10, and 192.168.1.1 at an interval of 5, 10, and 20 respectively, and logs to the file /var/log/ping_monitor/ping_monitor.log
 
    ```
    IP_ADDRESSES="8.8.8.8 10.10.10.10 192.168.1.1"
@@ -118,7 +120,7 @@ sudo systemctl restart ping_monitor.service
 
 **Common Issues:**
 
-- **Service not starting:** Check for errors in logs or typos in configurations.
+- **Service not starting:** Check for errors in logs or typos in configurations. Use the command `journalctl -u ping_monitor.service` to see ping monitor service logs.
 - **Ping failures:** Verify network connectivity and IP addresses.
 - **Log file unavailable:** Ensure permissions are set correctly.
 
