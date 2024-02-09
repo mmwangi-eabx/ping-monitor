@@ -1,14 +1,14 @@
-**## Ping Monitor**
+**# Ping Monitor**
 
-### Overview
+## Overview
 
 The Ping Monitor is a user-friendly script that diligently monitors the reachability of specified IP addresses at set intervals, logging the results for your convenience. You can run it as a systemd service for continuous monitoring.
 
-### Supported Platforms
+## Supported Platforms
 
 - Linux
 
-### Installation and Configuration
+## Installation and Configuration
 
 **Preparation:**
 
@@ -61,7 +61,7 @@ unzip ping_monitor_v1.0.1-alpha.zip -d /ping-monitor && cd ping-monitor
    sudo ./install.sh
    ```
 
-### Usage
+## Usage
 
 **Monitoring Status:**
 
@@ -105,18 +105,18 @@ sudo systemctl restart ping_monitor.service
    sudo ./uninstall.sh
    ```
 
-### Features
+## Features
 
 - **Multiple IP Addresses:** Monitor numerous IP addresses concurrently with custom intervals.
 - **Detailed Logging:** Timestamped logs record each ping attempt, success or failure.
 - **Systemd Integration:** Run as a service for continuous background monitoring.
 - **User-Friendly Configuration:** Define your monitoring preferences easily in `ping_monitor.conf`.
 
-### Screenshots
+## Screenshots
 
 ![ping monitor logs screenshoot](images/ping-monitor-logs-screenhoot-one.png)
 
-### Troubleshooting
+## Troubleshooting
 
 **Common Issues:**
 
@@ -128,13 +128,13 @@ sudo systemctl restart ping_monitor.service
 
 - Open an issue on the project's GitHub repository.
 
-### Contributing
+## Contributing
 
 Join us in improving Ping Monitor! You can contribute by:
 
 - Reporting bugs and suggesting features.
 - Submitting pull requests with code improvements.
 
-### License
+## License
 
 This project is licensed under the MIT License.
