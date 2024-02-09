@@ -7,8 +7,9 @@ sudo systemctl disable ping_monitor.service
 # Remove the systemd service file
 sudo rm /etc/systemd/system/ping_monitor.service
 
-# Remove the script
+# Remove scripts
 sudo rm /usr/local/bin/ping_monitor.sh
+sudo rm /usr/local/bin/ping_ip.sh
 
 # Remove the configuration file
 sudo rm /etc/ping_monitor.conf

@@ -14,14 +14,17 @@ sudo chmod u=rwx,go=rx /var/log/ping_monitor
 sudo chmod u=rw,go=r /var/log/ping_monitor/ping_monitor.log
 
 # Setup program
-# Create script
+# Create scripts
 sudo cp ping_monitor.sh /usr/local/bin/
+sudo cp ping_ip.sh /usr/local/bin/
 
 # Change ownership to root
 sudo chown root:root /usr/local/bin/ping_monitor.sh
+sudo chown root:root /usr/local/bin/ping_ip.sh
 
 # Set permissions to make it executable
 sudo chmod 755 /usr/local/bin/ping_monitor.sh
+sudo chmod 755 /usr/local/bin/ping_ip.sh
 
 # Setup auto start
 # Create service
