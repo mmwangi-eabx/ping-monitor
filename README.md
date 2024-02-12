@@ -83,8 +83,11 @@ sudo systemctl restart ping_monitor.service
 
 **Updating Configurations:**
 
-1. Edit `ping_monitor.conf`.
-2. Reload systemd and restart the service:
+1. Edit `ping_monitor.conf`. Example using vi
+   ```
+      sudo vi /etc/ping_monitor.conf
+   ```
+3. Reload systemd and restart the service:
 
    ```bash
    sudo systemctl daemon-reload
